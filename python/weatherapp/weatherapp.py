@@ -6,12 +6,12 @@ from PyQt5.QtCore import Qt
 class WeatherApp(QWidget):
     def __init__(self):
         super().__init__()
-        self.city_label = QLabel("Enter City Name", self)
+        self.city_label = QLabel("Enter Country Name", self)
         self.city_input = QLineEdit(self)
         self.get_weather_button = QPushButton("Get weather", self)
         self.forecast_label = QLabel(self)
         self.forecast_label.setWordWrap(True)
-
+        
         self.initUI()
 
     def initUI(self):
